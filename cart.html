@@ -1,0 +1,314 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Interior</title>
+    <link href="slick/slick.css" rel="stylesheet" />
+    <link href="slick/slick-theme.css" rel="stylesheet" />
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://unpkg.com/ress/dist/ress.min.css"> 
+</head>
+
+<body>
+    <header class="c-header c-hamburger-menu"><!-- 追記 クラスを追記 -->
+        <a href="#" class="c-header__logo">Cart</a>
+        <input type="checkbox" name="hamburger" id="hamburger" class="c-hamburger-menu__input"/><!-- 追記 idはlabelのforと同じにする -->
+        <label for="hamburger" class="c-hamburger-menu__bg"></label><!-- 追記 ハンバーガーメニュを開いた時の背景 -->
+        <ul class="c-header__list c-hamburger-menu__list"><!-- 追記 クラスを追記 -->
+        <li class="c-header__list-item">
+            <a href="index.html" class="c-header__list-link">Home</a>
+        </li>
+        <li class="c-header__list-item">
+            <a href="chair.html" class="c-header__list-link">Chair</a>
+        </li>
+        <li class="c-header__list-item">
+            <a href="sofa.html" class="c-header__list-link">Sofa</a>
+        </li>
+        <li class="c-header__list-item">
+            <a href="table.html" class="c-header__list-link">Table</a>
+        </li>
+        <li class="c-header__list-item">
+            <a href="light.html" class="c-header__list-link">Light</a>
+        </li>
+        <li class="c-header__list-item">
+            <a href="Knick-knacks.html" class="c-header__list-link">Knick-knacks</a>
+        </li>
+        <li class="c-header__list-item">
+            <div class="icona">
+                <img class="icon1" src="img/メールの無料アイコンその8.png"> 
+                <a href="otoiawase.html" class="c-header__list-link2">Inquiry</a>
+            </div>
+        </li>
+        
+        <li class="c-header__list-item">
+            <div class="icona">
+                <img class="icon2" src="img/人物ボタン.png"> 
+                <a href="member.html" class="c-header__list-link2">Member ship</a>
+            </div>
+        </li>
+    
+        <li class="c-header__list-item">
+            <div class="icona">
+                <img class="icon3" src="img/ログインドア　アイコン2.png"> 
+                <a href="signin.html" class="c-header__list-link2">Sign in</a>
+            </div>
+        </li>
+        </ul>
+        <label for="hamburger" class="c-hamburger-menu__button"><!-- 追記 ハンバーガーメニューのボタン -->
+        <span class="c-hamburger-menu__button-mark"></span>
+        <span class="c-hamburger-menu__button-mark"></span>
+        <span class="c-hamburger-menu__button-mark"></span>
+        </label>
+    </header>
+
+<head>
+    <title>ショッピングカート</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+        .container {
+            width: 80%;
+            margin: 20px auto;
+            background: #fff;
+            padding: 20px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+        }
+        h1 {
+            margin-top: 0;
+        }
+        .cart-item {
+            display: flex;
+            justify-content: space-between;
+            padding: 10px;
+            border-bottom: 1px solid #ddd;
+        }
+        .cart-item:last-child {
+            border-bottom: none;
+        }
+        .item-details {
+            display: flex;
+            flex-direction: column;
+        }
+        .item-name {
+            font-size: 1.2em;
+            margin: 0;
+        }
+        .item-price {
+            color: #888;
+        }
+        .quantity {
+            display: flex;
+            align-items: center;
+        }
+        .quantity input {
+            width: 50px;
+            text-align: center;
+        }
+        .item-actions {
+            display: flex;
+            align-items: center;
+        }
+        .item-actions button {
+            background-color: #f44336;
+            color: #fff;
+            border: none;
+            padding: 5px 10px;
+            cursor: pointer;
+            margin-left: 10px;
+        }
+        .item-actions button:hover {
+            background-color: #d32f2f;
+        }
+        .total {
+            text-align: right;
+            font-size: 1.2em;
+            margin-top: 20px;
+        }
+        .checkout-button {
+            display: block;
+            width: 100%;
+            padding: 10px;
+            background-color: #4caf50;
+            color: #fff;
+            border: none;
+            font-size: 1.2em;
+            cursor: pointer;
+            margin-top: 20px;
+        }
+        .checkout-button:hover {
+            background-color: #388e3c;
+        }
+
+        img{
+            width: 100px;
+            margin-right: 25px;
+            margin-left: 50px;
+        }
+
+        .itemimg{
+            display: flex;
+            margin-right: 500px;
+        }
+
+        @media (max-width:875px){
+                .row, .inquiry {
+                    flex-direction: column;
+                }
+
+        .itemimg{
+            display: block;
+            margin: left;
+            margin-right: 5px;
+        }
+
+        h1{
+            font-size: 15px;
+            margin-bottom: 20px;
+        }
+
+        .item-name{
+            font-size: 13px;
+        }
+
+        .item-price{
+            font-size: 10px;
+        }
+
+        .quantity{
+            font-size: 10px;
+        }
+
+        .total{
+            font-size: 18px;
+        }
+
+        .container {
+            width: 100%;
+            margin: 0 auto;
+
+        }
+
+        .item-actions button{
+            padding: 0px 0px;
+            margin-left: 0px;
+        }
+
+    }
+
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>ショッピングカート</h1>
+        
+        <div class="cart-item">
+            <div class="itemimg">
+                <img src="img/dining-area-8403094_640.jpg">
+                <div class="item-details">
+                    <span class="item-name">アイテム 1</span>
+                    <span class="item-price">¥55,000</span>
+                </div>
+            </div>    
+            
+            <div class="quantity">
+                <label for="qty1">数量:</label>
+                <input type="number" id="qty1" name="qty1" value="1" min="1">
+            </div>
+            <div class="item-actions">
+                <button>削除</button>
+            </div>
+        </div>
+        
+        <div class="cart-item">
+            <div class="itemimg">
+                <img src="img/architecture-2562608_640.jpg">
+                <div class="item-details">
+                    <span class="item-name">アイテム 2</span>
+                    <span class="item-price">¥12,000</span>
+                </div>
+            </div>    
+            
+            <div class="quantity">
+                <label for="qty1">数量:</label>
+                <input type="number" id="qty1" name="qty1" value="1" min="1">
+            </div>
+            <div class="item-actions">
+                <button>削除</button>
+            </div>
+        </div>
+
+        <div class="cart-item">
+            <div class="itemimg">
+                <img src="img/basket-5822386_640.jpg">
+                <div class="item-details">
+                    <span class="item-name">アイテム 3</span>
+                    <span class="item-price">¥34,000</span>
+                </div>
+            </div>    
+            
+            <div class="quantity">
+                <label for="qty1">数量:</label>
+                <input type="number" id="qty1" name="qty1" value="1" min="1">
+            </div>
+            <div class="item-actions">
+                <button>削除</button>
+            </div>
+        </div>
+
+        <div class="cart-item">
+            <div class="itemimg">
+                <img src="img/chair-8142102_640.jpg">
+                <div class="item-details">
+                    <span class="item-name">アイテム 4</span>
+                    <span class="item-price">¥10,000</span>
+                </div>
+            </div>    
+            
+            <div class="quantity">
+                <label for="qty1">数量:</label>
+                <input type="number" id="qty1" name="qty1" value="1" min="1">
+            </div>
+            <div class="item-actions">
+                <button>削除</button>
+            </div>
+        </div>
+
+        <div class="cart-item">
+            <div class="itemimg">
+                <img src="img/cactus-2556000_640.jpg">
+                <div class="item-details">
+                    <span class="item-name">アイテム 5</span>
+                    <span class="item-price">¥900</span>
+                </div>
+            </div>    
+            
+            <div class="quantity">
+                <label for="qty1">数量:</label>
+                <input type="number" id="qty1" name="qty1" value="1" min="1">
+            </div>
+            <div class="item-actions">
+                <button>削除</button>
+            </div>
+        </div>
+
+
+        <!-- Add more cart items here -->
+
+        <div class="total">
+            合計: ¥111,900
+        </div>
+        
+        <button class="checkout-button">購入する</button>
+    </div>
+
+    <footer>
+        <p class="interior">© 2024 Interior</p>
+    </footer>
+</body>
+</html>
