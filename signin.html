@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Interior</title>
+    <link href="slick/slick.css" rel="stylesheet" />
+    <link href="slick/slick-theme.css" rel="stylesheet" />
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://unpkg.com/ress/dist/ress.min.css"> 
+</head>
+
+<body>
+    <header class="c-header c-hamburger-menu" ><!-- 追記 クラスを追記 -->
+        <a href="#" class="c-header__logo">Sign in</a>
+        <input type="checkbox" name="hamburger" id="hamburger" class="c-hamburger-menu__input"/><!-- 追記 idはlabelのforと同じにする -->
+        <label for="hamburger" class="c-hamburger-menu__bg"></label><!-- 追記 ハンバーガーメニュを開いた時の背景 -->
+        <ul class="c-header__list c-hamburger-menu__list"><!-- 追記 クラスを追記 -->
+        <li class="c-header__list-item">
+            <a href="index.html" class="c-header__list-link">Home</a>
+        </li>
+        <li class="c-header__list-item">
+            <a href="chair.html" class="c-header__list-link">Chair</a>
+        </li>
+        <li class="c-header__list-item">
+            <a href="sofa.html" class="c-header__list-link">Sofa</a>
+        </li>
+        <li class="c-header__list-item">
+            <a href="table.html" class="c-header__list-link">Table</a>
+        </li>
+        <li class="c-header__list-item">
+            <a href="light.html" class="c-header__list-link">Light</a>
+        </li>
+        <li class="c-header__list-item">
+            <a href="Knick-knacks.html" class="c-header__list-link">Knick-knacks</a>
+        </li>
+        <li class="c-header__list-item">
+            <div class="icona">
+                <img class="icon1" src="img/メールの無料アイコンその8.png"> 
+                <a href="otoiawase.html" class="c-header__list-link2">Inquiry</a>
+            </div>
+        </li>
+        
+        <li class="c-header__list-item">
+            <div class="icona">
+                <img class="icon2" src="img/人物ボタン.png"> 
+                <a href="member.html" class="c-header__list-link2">Member ship</a>
+            </div>
+        </li>
+    
+        <li class="c-header__list-item">
+            <div class="icona">
+                <img class="icon3" src="img/ログインドア　アイコン2.png"> 
+                <a href="signin.html" class="c-header__list-link2">Sign in</a>
+            </div>
+        </li>
+        </ul>
+        <label for="hamburger" class="c-hamburger-menu__button"><!-- 追記 ハンバーガーメニューのボタン -->
+        <span class="c-hamburger-menu__button-mark"></span>
+        <span class="c-hamburger-menu__button-mark"></span>
+        <span class="c-hamburger-menu__button-mark"></span>
+        </label>
+    </header>
+
+
+<style>
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f5f5f5;
+    margin: 0;
+}
+
+form {
+    background-color: #fff;
+    padding: 50px;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    margin: 0;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="password"],
+select {
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    margin-bottom: 10px;
+    font-size: 14px;
+}
+
+input[type="radio"],
+input[type="checkbox"] {
+    margin-right: 5px;
+}
+
+input[type="submit"] {
+    background-color: #4CAF50;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+input[type="submit"]:hover {
+    background-color: #45a049;
+}
+
+.center {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 15px;
+    width: 100%;
+    max-width: 300px;
+}
+
+.left {
+    text-align: left;
+    margin-bottom: 5px;
+}
+
+</style>
+
+        <main>
+            <section class="section5">
+                <form action="登録処理のURL" method="POST" enctype="multipart/form-data">
+                    <div class="center">
+                        <div class="form-group">
+                            <label class="left" for="email">メールアドレス</label>
+                            <input type="email" id="email" name="email" required>
+                        </div>
+                        <div class="form-group">
+                            <label class="left" for="password">パスワード</label>
+                            <input type="password" id="password" name="password" required>
+                        </div>
+                        <input type="submit" value="sign in" id="form_button" onclick="location.href='index.html'">
+                    </div>
+                </form>
+                    <footer>
+                        <p class="interior">© 2024 Interior</p>
+                    </footer>
+            </section>
+        </main>
+    </body>
+</html>
