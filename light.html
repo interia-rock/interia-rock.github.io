@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Interior</title>
+    <link href="slick/slick.css" rel="stylesheet" />
+    <link href="slick/slick-theme.css" rel="stylesheet" />
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://unpkg.com/ress/dist/ress.min.css"> 
+</head>
+
+<body>
+    <header class="c-header c-hamburger-menu" style="position: fixed;"><!-- 追記 クラスを追記 -->
+        <a href="#" class="c-header__logo">Light</a>
+        <input type="checkbox" name="hamburger" id="hamburger" class="c-hamburger-menu__input"/><!-- 追記 idはlabelのforと同じにする -->
+        <label for="hamburger" class="c-hamburger-menu__bg"></label><!-- 追記 ハンバーガーメニュを開いた時の背景 -->
+        <ul class="c-header__list c-hamburger-menu__list"><!-- 追記 クラスを追記 -->
+        <li class="c-header__list-item">
+            <a href="index.html" class="c-header__list-link">Home</a>
+        </li>
+        <li class="c-header__list-item">
+            <a href="chair.html" class="c-header__list-link">Chair</a>
+        </li>
+        <li class="c-header__list-item">
+            <a href="sofa.html" class="c-header__list-link">Sofa</a>
+        </li>
+        <li class="c-header__list-item">
+            <a href="table.html" class="c-header__list-link">Table</a>
+        </li>
+        <li class="c-header__list-item">
+            <a href="light.html" class="c-header__list-link">Light</a>
+        </li>
+        <li class="c-header__list-item">
+            <a href="Knick-knacks.html" class="c-header__list-link">Knick-knacks</a>
+        </li>
+        <li class="c-header__list-item">
+            <div class="icona">
+                <img class="icon1" src="img/メールの無料アイコンその8.png"> 
+                <a href="otoiawase.html" class="c-header__list-link2">Inquiry</a>
+            </div>
+        </li>
+        
+        <li class="c-header__list-item">
+            <div class="icona">
+                <img class="icon2" src="img/人物ボタン.png"> 
+                <a href="member.html" class="c-header__list-link2">Member ship</a>
+            </div>
+        </li>
+    
+        <li class="c-header__list-item">
+            <div class="icona">
+                <img class="icon3" src="img/ログインドア　アイコン2.png"> 
+                <a href="signin.html" class="c-header__list-link2">Sign in</a>
+            </div>
+        </li>
+        </ul>
+        
+        <a href="signin.html"><img class="signinbutton" src="img/ログインドア　アイコン2.png"></a>
+        <a href="cart.html"><img class="cartbutton" src="img/15335_line.png"></a>
+
+        <label for="hamburger" class="c-hamburger-menu__button"><!-- 追記 ハンバーガーメニューのボタン -->
+        <span class="c-hamburger-menu__button-mark"></span>
+        <span class="c-hamburger-menu__button-mark"></span>
+        <span class="c-hamburger-menu__button-mark"></span>
+        </label>
+    </header>
+
+    <div class="section"></div>
+    <div class="gallery">
+        <div>
+            <figure class="photoA"><img src="img/architecture-2562608_640.jpg" alt="photoA"></figure>
+            <p>￥12,000</p>
+        </div>
+        <div>
+            <figure class="photoB"><img src="img/bright-1851267_640.jpg" alt="photoB"></figure>
+            <p>￥10,000</p>
+        </div>
+        <div>
+            <figure class="photoC"><img src="img/dining-room-8407_640.jpg" alt="photoC"></figure>
+            <p>￥23,000</p>
+        </div>
+        <div>
+            <figure class="photoD"><img src="img/dining-room-2485946_60.jpg" alt="photoD"></figure>
+            <p>￥13,000</p>
+        </div>
+        <div>
+            <figure class="photoE"><img src="img/lamp-2583271_1280.jpg" alt="photoE"></figure>
+            <p>￥24,000</p>
+        </div>
+        <div>
+            <figure class="photoF"><img src="img/lamp-5988999_1280.jpg" alt="photoF"></figure>
+            <p>￥34,000</p>
+        </div>
+        <div>
+            <figure class="photoG"><img src="img/lamp-8539116_640.jpg" alt="photoG"></figure>
+            <p>￥25,000</p>
+        </div>
+        <div>
+            <figure class="photoH"><img src="img/the-interior-of-the-233_640.jpg" alt="photoH"></figure>
+            <p>￥40,000</p>
+        </div>
+        <div>
+            <figure class="photoI"><img src="img/real-estate-6893085_640.jpg" alt="photoI"></figure>
+            <p>￥35,000</p>
+        </div>
+    </div>
+    </div>
+    <div class="slider1" dir="rtl">
+        <div><img src="img/the-interior-of-the-2452233_640.jpg"/></div>
+        <div><img src="img/the-interior-of-the-233_640.jpg"/></div>
+        <div><img src="img/tables-6087304_640.jpg"/></div>
+        <div><img src="img/table-8403047_640.jpg"/></div>
+        <div><img src="img/table-4222263_640.jpg"/></div>
+        <div><img src="img/still-life-598317_640.jpg"/></div>
+        <div><img src="img/basket-5822386_640.jpg"/></div>
+    </div>
+
+        <script src="https://code.jquery.com/jquery-3.6.1.min.js"></script>
+        <script src="slick/slick.min.js"></script>
+        <script src="main.js"></script>
+
+
+
+
+        <div class="slider2" >
+            <div><img src="img/sofa-8323905_640.jpg"/></div>
+            <div><img src="img/real-estate-8900778_640.jpg"/></div>
+            <div><img src="img/living-room-7121425_1280.jpg"/></div>
+            <div><img src="img/living-room-4720962_1280.jpg"/></div>
+            <div><img src="img/living-room-2155376_1280 (1).jpg"/></div>
+            <div><img src="img/dining-room-8407_640.jpg"/></div>
+            <div><img src="img/building-8323951_1280.jpg"/></div>
+        </div>
+
+        <script src="https://code.jquery.com/jquery-3.6.1.min.js"></script>
+        <script src="slick/slick.min.js"></script>
+        <script src="main.js"></script>
+
+
+
+
+
+    <footer>
+        <p class="interior">© 2024 Interior</p>
+    </footer>
+</body>
+</div>
